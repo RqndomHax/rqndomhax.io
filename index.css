@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+
+html {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 1.2rem;
+}
+
+.margin {
+    margin-top: 1.3rem;
+}
+
+.sidebar {
+    float: left;
+    margin-left: 2rem;
+    margin-right: 1.2rem;
+    border-right: solid 0.2rem #10A0A0;
+    padding-right: 2rem;
+    color: #10A0A0;
+    height: 300px;
+}
+
+.username {
+    float: right;
+    margin-right: 4rem;
+    line-height: 0.9em;
+    margin-top: -2.4rem;
+    font-size: 0.9rem;
+}
+
+.username p {
+    white-space: pre;
+}
+
+.infos {
+    overflow: hidden;
+}
+
+.infos ul::before {
+    content: "RqndomShell:";
+    text-decoration: underline;
+    font-style: italic;
+    margin-left: -2rem;
+}
+
+.infos li {
+    margin-top: 0.3rem;
+    list-style-type: none;
+}
+
+.infos .command::before {
+    content: "$>";
+    color: #00ff00;
+    margin-right: 0.4rem;
+}
+
+.infos .result::before {
+    content: "> ";
+    color: #00ff00;
+    margin-left: -1rem;
+}
+
+.infos .result {
+    color: #10A0A0;
+    margin-top: -0.5rem;
+}
