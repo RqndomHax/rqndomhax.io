@@ -4,7 +4,7 @@ html {
     background-color: #000000;
     color: #ffffff;
     font-family: 'Anonymous Pro', monospace;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 a {
@@ -122,7 +122,7 @@ a {
 
 .box li p {
     color: #ffffff;
-    font-size: 0.9rem;
+    font-size: 1.05rem;
 }
 
 .infos ul li ul {
@@ -150,7 +150,7 @@ a {
     display: none;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1420px) {
     .infos {
         clear: both;
     }
