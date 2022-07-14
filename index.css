@@ -65,6 +65,7 @@ a {
 }
 
 .infos {
+    clear: right;
     overflow: hidden;
     border-left: solid 0.2rem #10A0A0;
     padding-left: 2rem;
@@ -143,4 +144,34 @@ a {
 
 #projects p.result {
     margin-bottom: -0.8rem;
+}
+
+.hidden {
+    display: none;
+}
+
+@media only screen and (max-width: 900px) {
+    .infos {
+        clear: both;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .stuff {
+        margin-left: auto;
+        text-align: center;
+        float: none;
+    }
+
+    .hidden {
+        display: inline;
+    }
+
+    .contact {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
 }
