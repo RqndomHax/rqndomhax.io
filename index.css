@@ -19,9 +19,6 @@ a {
     float: left;
     margin-left: 2rem;
     margin-right: 1.2rem;
-    border-right: solid 0.2rem #10A0A0;
-    padding-right: 2rem;
-    color: #10A0A0;
     height: 900px;
 }
 
@@ -60,6 +57,8 @@ a {
 
 .infos {
     overflow: hidden;
+    border-left: solid 0.2rem #10A0A0;
+    padding-left: 2rem;
 }
 
 .infos ul {
