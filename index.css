@@ -7,6 +7,10 @@ html {
     font-size: 1.2rem;
 }
 
+a {
+    color: #10A0CF;
+}
+
 .margin {
     margin-top: 1.3rem;
 }
@@ -18,15 +22,36 @@ html {
     border-right: solid 0.2rem #10A0A0;
     padding-right: 2rem;
     color: #10A0A0;
-    height: 300px;
+    height: 900px;
+}
+
+.sidebar ul {
+    margin-left: -2rem;
+    margin-bottom: 2rem;
+}
+
+.sidebar li::before {
+    content: "~ ";
+    color: #00ff00;
+}
+
+.sidebar li {
+    list-style: none;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    font-style: italic;
+}
+
+.sidebar a {
+    text-decoration: none;
 }
 
 .username {
     float: right;
-    margin-right: 4rem;
+    margin-right: 2rem;
     line-height: 0.9em;
     margin-top: -2.4rem;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 .username p {
@@ -37,15 +62,18 @@ html {
     overflow: hidden;
 }
 
-.infos ul::before {
-    content: "RqndomShell:";
+.infos ul {
+    margin-bottom: 2rem;
+}
+
+.infos .title {
     text-decoration: underline;
     font-style: italic;
     margin-left: -2rem;
 }
 
 .infos li {
-    margin-top: 0.3rem;
+    margin-top: 1.3rem;
     list-style-type: none;
 }
 
@@ -65,3 +93,19 @@ html {
     color: #10A0A0;
     margin-top: -0.5rem;
 }
+
+#projects ul {
+    padding: 0;
+    color: #10A0A0;
+}
+
+#projects li {
+    margin-left: 1.3rem;
+    margin-bottom: -0.8rem;
+    list-style-type: "- ";
+}
+
+#projects p.result {
+    margin-bottom: -2.3rem;
+}
+
