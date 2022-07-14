@@ -4,7 +4,7 @@ html {
     background-color: #000000;
     color: #ffffff;
     font-family: 'Anonymous Pro', monospace;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 a {
@@ -15,14 +15,18 @@ a {
     margin-top: 1.3rem;
 }
 
+.container {
+    margin-left: 300px;
+}
+
 .sidebar {
-    float: left;
+    position: fixed;
     margin-left: 2rem;
     margin-right: 1.2rem;
-    height: 900px;
-    justify-content: space-between;
     display: flex;
     flex-direction: column;
+    width: 300px;
+    height: 100%;
 }
 
 .sidebar ul {
@@ -58,10 +62,10 @@ a {
 }
 
 .contact {
-    font-size: 1.5rem;
-    border: solid 0.2rem #10A0A0;
-    padding: 1rem;
+    border: solid 2px #10A0A0;
+    padding: 16px 10px;
     text-align: center;
+    border-radius: 4px;
 }
 
 .infos {
@@ -118,6 +122,7 @@ a {
     list-style-type: none;
     border: solid 0.1rem #00ff00;
     padding: 0.3rem;
+    border-radius: 4px;
 }
 
 .box li p {
@@ -151,6 +156,14 @@ a {
 }
 
 @media only screen and (max-width: 1420px) {
+    html {
+        font-size: 1.6rem;
+    }
+
+    .container {
+        margin-left: 0;
+    }
+
     .infos {
         clear: both;
     }
