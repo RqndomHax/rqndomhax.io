@@ -43,7 +43,7 @@ a {
     text-decoration: none;
 }
 
-.username {
+.stuff {
     float: right;
     margin-right: 2rem;
     line-height: 0.9em;
@@ -51,7 +51,7 @@ a {
     font-size: 0.8rem;
 }
 
-.username p {
+.stuff p {
     white-space: pre;
 }
 
@@ -76,6 +76,10 @@ a {
     list-style-type: none;
 }
 
+.infos .command {
+    color: #10AFF0;
+}
+
 .infos .command::before {
     content: "$>";
     color: #00ff00;
@@ -89,29 +93,30 @@ a {
 }
 
 .infos .result {
-    color: #10A0A0;
     margin-top: -0.5rem;
 }
 
-#skills ul {
+.box {
     display: flex;
     text-align: center;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
 }
 
-#skills ul li {
+.box li {
     list-style-type: none;
     border: solid 0.1rem #00ff00;
     padding: 0.3rem;
 }
 
-#skills ul li p {
+.box li p {
     color: #ffffff;
     font-size: 0.9rem;
 }
 
 .infos ul li ul {
     padding: 0;
-    color: #10A0A0;
 }
 
 .infos ul li li {
@@ -123,11 +128,10 @@ a {
     margin-right: 0.3rem;
 }
 
-#projects p.result {
-    margin-bottom: -0.8rem;
-}
-
-#skills p.result {
+.remove-margin  p.result {
     margin-bottom: -2.3rem;
 }
 
+#projects p.result {
+    margin-bottom: -0.8rem;
+}
